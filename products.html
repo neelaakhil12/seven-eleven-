@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Seven Eleven Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            orange: '#FF8C00',
+                            black: '#0B0B0B',
+                            dark: '#1F1F1F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-industrial-black overflow-x-hidden pt-20">
+
+    <!-- Sticky Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-12">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-16 w-auto">
+                <div class="hidden lg:flex flex-col leading-none">
+                    <span class="text-xl font-black text-industrial-black tracking-tighter">SEVEN ELEVEN</span>
+                    <span
+                        class="text-sm font-bold text-industrial-orange tracking-[0.2em] uppercase">Technologies</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Home</a>
+                <a href="services.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Services</a>
+                <a href="products.html"
+                    class="text-industrial-orange px-3 py-2 text-sm font-bold uppercase border-b-2 border-industrial-orange">Our
+                    Products</a>
+                <a href="clients.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Our
+                    Clients</a>
+                <a href="about.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">About
+                    Us</a>
+                <a href="contact.html"
+                    class="bg-industrial-orange text-white px-5 py-2 rounded-sm text-sm font-bold uppercase hover:bg-industrial-black hover:text-white transition-all">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-industrial-black py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-5xl font-black text-white uppercase tracking-tighter mb-4" data-aos="fade-down">Industrial
+                <span class="text-industrial-orange">Products</span>
+            </h1>
+            <p class="text-gray-400 uppercase tracking-widest text-sm font-bold" data-aos="fade-up">High-Quality
+                Components | Systems | Spares</p>
+        </div>
+    </header>
+
+    <!-- Products Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-grid">
+                <!-- Products will be injected via JS or written directly -->
+
+                <!-- 1. Inbed Coils -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/inbed-coils.png" alt="Inbed Coils" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Inbed Coils</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">High-efficiency heating coils designed for
+                            AFBC/CFBC boilers.</p>
+                    </div>
+                    <button onclick="openModal('inbed-coils')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 2. Gilled Economiser -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="50">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/gilled-economiser.png" alt="Gilled Economiser"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Gilled Economiser</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Industrial heat recovery system for
+                            maximizing boiler efficiency.</p>
+                    </div>
+                    <button onclick="openModal('gilled-economiser')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 3. Hot Air Generator -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="100">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/hot-air-generator.png" alt="Hot Air Generator"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Hot Air Generator</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Industrial air heating solutions for various
+                            drying processes.</p>
+                    </div>
+                    <button onclick="openModal('hot-air-generator')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 4. Chimney -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="150">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/chimney-industrial.png" alt="Chimney"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Chimney</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Custom-built industrial stacks with emission
+                            compliance.</p>
+                    </div>
+                    <button onclick="openModal('chimney')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 5. Economiser -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/economiser-main.png" alt="Economiser"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Economiser</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Heat exchange device that increases the
+                            energy efficiency of boilers.</p>
+                    </div>
+                    <button onclick="openModal('economiser')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 6. PLC Panel -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="250">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/plc-panel-main.png" alt="PLC Panel" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">PLC Panel</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Automated control systems for industrial
+                            processes and safety.</p>
+                    </div>
+                    <button onclick="openModal('plc-panel')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 7. MCC Panel -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="300">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/mcc-panel-main.png" alt="MCC Panel" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">MCC Panel</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Motor Control Centers for centralized power
+                            distribution.</p>
+                    </div>
+                    <button onclick="openModal('mcc-panel')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 8. Oil/Gas Burners -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="350">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/oil-gas-burners-main.png" alt="Oil/Gas Burners"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Oil/Gas Burners</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">High-performance combustion systems for
+                            industrial heat.</p>
+                    </div>
+                    <button onclick="openModal('oil-gas-burners')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 9. Steam Boiler -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="400">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/steam-boiler-main.png" alt="Steam Boiler"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Steam Boiler</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">High-pressure steam generation systems for
+                            industrial power.</p>
+                    </div>
+                    <button onclick="openModal('steam-boiler')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 10. Boiler SCADA Programming -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="450">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/scada-programming.png" alt="Boiler SCADA Programming"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Boiler SCADA Programming
+                        </h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Centralized monitoring and digital control
+                            for boiler plant automation.</p>
+                    </div>
+                    <button onclick="openModal('scada-programming')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 11. Gilled Economiser Coils -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="500">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/gilled-economiser-coils.png" alt="Gilled Economiser Coils"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Gilled Economiser Coils</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">High-efficiency heat transfer tubes with
+                            external gills for maximum absorption.</p>
+                    </div>
+                    <button onclick="openModal('gilled-coils')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 12. Finned Economiser Coils -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="550">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/finned-economiser-coils.png" alt="FINNED ECONOMISERS COILS"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">FINNED ECONOMISER COILS
+                        </h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Extended surface heat exchangers for
+                            industrial boilers.</p>
+                    </div>
+                    <button onclick="openModal('finned-coils')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 13. Superheated Coils Header -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="600">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/superheated-coils-header.png" alt="Superheated Coils Header"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Superheated Coils Header
+                        </h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Critical high-temperature steam collection
+                            and distribution system.</p>
+                    </div>
+                    <button onclick="openModal('coils-header')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 14. Screw Feeder -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="650">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/screw-feeder-main.png" alt="Screw Feeder"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Screw Feeder</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Precision-engineered mechanical conveying and
+                            material handling systems.</p>
+                    </div>
+                    <button onclick="openModal('screw-feeder')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 15. Deaerator Baffle Plates -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="700">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/deaerator-baffle-plates.png" alt="Deaerator Baffle Plates"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Deaerator Baffle Plates</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Precision components for thermal deaeration
+                            and gas removal.</p>
+                    </div>
+                    <button onclick="openModal('baffle-plates')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 16. Autoclave for Cement Industry -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="750">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/autoclave-cement-industry.png" alt="Autoclave for Cement Industry"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Autoclave for Cement
+                            Industry</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">High-pressure steam curing vessels for AAC
+                            block production.</p>
+                    </div>
+                    <button onclick="openModal('autoclave-cement')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 17. Storage Tank -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full"
+                    data-aos="zoom-in" data-aos-delay="800">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/storage-tank-main.png" alt="Storage Tank"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Storage Tank</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Durable liquid and gas storage solutions for
+                            industrial plants.</p>
+                    </div>
+                    <button onclick="openModal('storage-tank')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- 18. Spares -->
+                <div class="group bg-white border border-gray-100 p-4 card-hover flex flex-col h-full border-b-0 xl:border-b"
+                    data-aos="zoom-in" data-aos-delay="850">
+                    <div class="aspect-square bg-gray-100 mb-4 overflow-hidden">
+                        <img src="assets/images/boiler.png" alt="Spares" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-black uppercase text-industrial-black mb-2">Spares</h3>
+                        <p class="text-xs text-gray-500 line-clamp-2 mb-4">Manufacturer and supplier of boiler pressure
+                            parts and water treatment solutions.</p>
+                    </div>
+                    <button onclick="openModal('spares')"
+                        class="w-full py-2 border-2 border-industrial-orange text-industrial-orange text-xs font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-container"
+        class="fixed inset-0 z-[100] hidden overflow-y-auto flex items-start justify-center p-4 sm:p-10 bg-black bg-opacity-90 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-5xl p-8 sm:p-12 relative my-auto shadow-2xl">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-4xl font-light text-gray-400 hover:text-industrial-orange transition-colors leading-none z-50">
+                &times;
+            </button>
+            <div id="modal-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white text-industrial-black py-20 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="inline-block">
+                        <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-20 w-auto">
+                    </a>
+                    <p class="mt-6 text-gray-600 max-w-md">
+                        Forward-looking engineering company dedicated to manufacturing high-quality industrial
+                        components and systems. Backed by experienced engineers and techniques.
+                    </p>
+                    <div class="mt-8 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase mb-8 border-b-2 border-industrial-orange inline-block pb-2">
+                        Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Home</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Services</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Our
+                                Products</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase mb-8 border-b-2 border-industrial-orange inline-block pb-2">
+                        Contact Info</h4>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span>Sy. No: 134, Plot No: 961, 962, 1007 & 1008,<br>
+                                Dulapally Village, IDA Jeedimetla,<br>
+                                Medchal - Malkajgiri, Hyderabad - 500055</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-industrial-orange"></i>
+                            <span>+91 9885292147</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-industrial-orange"></i>
+                            <span>admin@seveneleventechnologies.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-gray-100 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 Seven Eleven Technologies. All rights reserved. Developed by <a
+                        href="https://www.codtechitsolutions.com/" target="_blank"
+                        class="hover:text-industrial-orange transition-colors">Codtech IT Solution</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 1)';
+            } else {
+                navbar.classList.remove('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+            }
+        });
+
+        const productsData = {
+            'inbed-coils': {
+                title: 'In-bed Coils',
+                image: 'assets/images/inbed-coils.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>In-bed coils are heat transfer tubes installed inside the fluidized bed of a boiler.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They are commonly used in AFBC/CFBC boilers.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The coils are directly surrounded by hot bed material and fuel.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Heat from the bed is transferred efficiently to the fluid inside the tubes.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Water or steam flows through the coils depending on the design.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They help control bed temperature during combustion.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>In-bed coils improve overall heat absorption and boiler efficiency.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The tubes are made of high-temperature resistant alloy steel.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Proper support and spacing prevent damage from bed movement.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They play a vital role in stable and efficient fluidized bed boiler operation.</span></li>
+                    </ul>
+                `
+            },
+            'gilled-economiser': {
+                title: 'Gilled Economiser',
+                image: 'assets/images/gilled-economiser.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A gilled economiser is a heat recovery device used in boiler systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It consists of tubes fitted with external gills (fins) to increase surface area.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The increased surface area improves heat transfer efficiency.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is installed in the flue gas path after the boiler.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Feed water flows inside the tubes while hot gases flow outside.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The gills absorb maximum heat from exhaust gases.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>This reduces flue gas temperature before it reaches the chimney.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It helps reduce fuel consumption and operating costs.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Gilled economisers are compact and suitable for high heat recovery.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They are widely used in thermal power plants and industrial boilers.</span></li>
+                    </ul>
+                `
+            },
+            'hot-air-generator': {
+                title: 'Hot Air Generator',
+                image: 'assets/images/hot-air-generator.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A hot air generator is a device used to produce heated air for industrial applications.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It works by burning fuel such as oil, gas, coal, or biomass.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The heat produced is transferred to air through a heat exchanger or directly.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A blower circulates the hot air to the required process area.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is widely used in drying, heating, and curing operations.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Hot air generators are common in cement, textile, food, and chemical industries.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They provide uniform and controlled temperature air supply.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The system includes a burner, combustion chamber, blower, and controls.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Safety devices are provided to prevent overheating and fuel hazards.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They offer efficient, continuous, and reliable heating for industrial processes.</span></li>
+                    </ul>
+                `
+            },
+            'chimney': {
+                title: 'Industrial Chimney',
+                image: 'assets/images/chimney-industrial.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A chimney is a vertical structure used to discharge flue gases into the atmosphere.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is commonly installed in boilers, furnaces, and power plants.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Chimneys help carry smoke, ash, and exhaust gases safely away from the plant.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They create natural draft to improve combustion efficiency.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Industrial chimneys are made of steel or reinforced concrete.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Height is designed to ensure proper dispersion of pollutants.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Internal linings protect the structure from high temperature and corrosion.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Platforms and ladders are provided for inspection and maintenance.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Lightning protection systems are installed for safety.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A well-designed chimney ensures environmental compliance and safe operation.</span></li>
+                    </ul>
+                `
+            },
+            'economiser': {
+                title: 'Industrial Economiser',
+                image: 'assets/images/economiser-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>An economiser is a heat recovery device used in boiler systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It captures waste heat from flue gases leaving the boiler.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The recovered heat is used to preheat the boiler feed water.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Feed water flows inside tubes while hot gases pass outside.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is installed in the flue gas path before the chimney.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Preheated water reduces fuel consumption for steam generation.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>This improves overall boiler efficiency and performance.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It also lowers the temperature of exhaust gases.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Economisers help reduce energy losses and operating costs.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They are widely used in thermal power plants and industrial boilers.</span></li>
+                    </ul>
+                `
+            },
+            'plc-panel': {
+                title: 'PLC Control Panel',
+                image: 'assets/images/plc-panel-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A PLC Panel (Programmable Logic Controller Panel) is used for industrial automation and control.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It controls machinery and processes through programmed logic functions.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Ensures accurate monitoring and automatic operation of equipment.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Commonly used in boilers, manufacturing plants, and process industries.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Integrates sensors, relays, circuit breakers, and control modules.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Enhances operational efficiency and reduces manual intervention.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Designed with proper wiring, safety interlocks, and protection systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Provides real-time data monitoring and fault detection.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Built as per industrial electrical and safety standards.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Improves reliability, productivity, and process control in industrial operations.</span></li>
+                    </ul>
+                `
+            },
+            'mcc-panel': {
+                title: 'MCC Panel (Motor Control Center)',
+                image: 'assets/images/mcc-panel-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>An MCC Panel (Motor Control Center) is used to control and protect multiple electric motors.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It distributes electrical power safely to motors and machinery.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Contains motor starters, circuit breakers, contactors, and overload relays.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Enables centralized control of industrial motor operations.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Provides protection against short circuits, overloads, and faults.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Widely used in factories, process plants, and utility systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Designed for safe operation, easy maintenance, and reliability.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Helps improve energy efficiency and system performance.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Built according to industrial electrical standards and safety norms.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Ensures smooth and uninterrupted operation of motor-driven equipment.</span></li>
+                    </ul>
+                `
+            },
+            'oil-gas-burners': {
+                title: 'Oil/Gas Burners',
+                image: 'assets/images/oil-gas-burners-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Oil/Gas burners are devices used to produce controlled combustion for boilers and furnaces.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They burn liquid fuel (oil) or gaseous fuel (natural gas/LPG) efficiently.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Provide the required heat energy for steam generation or process heating.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Designed for high efficiency and low fuel consumption.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Ensure stable flame and uniform heat distribution.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Equipped with ignition systems, fuel pumps, and safety controls.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Can be single-fuel or dual-fuel (oil and gas) operated.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Reduce emissions with optimized air–fuel mixing.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Built to withstand high temperatures and continuous operation.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Widely used in power plants, industries, and heating applications.</span></li>
+                    </ul>
+                `
+            },
+            'steam-boiler': {
+                title: 'High-Efficiency Steam Boiler',
+                image: 'assets/images/steam-boiler-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A Steam Boiler is a closed vessel used to generate steam by heating water.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It converts water into steam using fuel such as coal, oil, gas, or biomass.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The generated steam is used for power generation and industrial processes.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Provides controlled and continuous steam supply.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Designed to operate under high pressure and temperature.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Equipped with safety valves, pressure gauges, and control systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Ensures high thermal efficiency and fuel economy.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Built according to industrial safety standards and regulations.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Used in industries like power, pharmaceutical, chemical, and food processing.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Essential equipment for reliable and efficient industrial operations.</span></li>
+                    </ul>
+                `
+            },
+            'scada-programming': {
+                title: 'Boiler SCADA Programming',
+                image: 'assets/images/scada-programming.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Boiler SCADA Programming enables centralized monitoring and control of boiler systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>SCADA (Supervisory Control and Data Acquisition) collects real-time operational data.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It allows operators to monitor pressure, temperature, flow, and fuel levels.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Provides automated control for safe and efficient boiler operation.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Displays system status through graphical HMI screens.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Generates alarms and alerts for abnormal conditions.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Records historical data for analysis and reporting.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Improves safety by reducing manual intervention.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Enhances efficiency, reliability, and energy management.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Widely used in power plants and industrial process facilities.</span></li>
+                    </ul>
+                `
+            },
+            'gilled-coils': {
+                title: 'Gilled Economiser Coils',
+                image: 'assets/images/gilled-economiser-coils.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Gilled economiser coils are heat transfer tubes used in boiler economisers.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Each tube has external gills (fins) to increase the heat transfer area.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The gills enhance absorption of heat from flue gases.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Feed water flows inside the coils while hot gases flow outside.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>These coils are installed in the flue gas path of the boiler.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They recover waste heat that would otherwise be lost to the atmosphere.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Preheating feed water improves boiler efficiency.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Gilled coils reduce fuel consumption and operating costs.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They are made of high-quality steel to withstand temperature and pressure.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Gilled economiser coils are widely used in thermal power plants and industrial boilers.</span></li>
+                    </ul>
+                `
+            },
+            'finned-coils': {
+                title: 'FINNED ECONOMISER COILS',
+                image: 'assets/images/finned-economiser-coils.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A finned economiser coil is a heat exchange component used in boiler economisers.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It consists of tubes with external fins attached to increase surface area.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The fins improve heat transfer from hot flue gases to feed water.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Feed water flows inside the tubes while gases flow outside.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is installed in the flue gas path of the boiler system.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The coil recovers waste heat that would otherwise be lost.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Preheated water entering the boiler improves efficiency.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Finned coils reduce fuel consumption and operating costs.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They are compact and suitable for high heat recovery applications.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>These coils are widely used in thermal power plants and industrial boilers.</span></li>
+                    </ul>
+                `
+            },
+            'coils-header': {
+                title: 'Superheated Coils Header',
+                image: 'assets/images/superheated-coils-header.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A superheated coils header is a component of the boiler superheater system.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It collects steam from multiple superheater coils or tubes.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The header distributes or receives high-temperature steam uniformly.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Steam entering the coils is heated above saturation temperature.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The header ensures equal flow through all superheater tubes.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is made of alloy steel to withstand high temperature and pressure.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Headers are connected to coils by welded tube joints.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Proper design prevents thermal stress and pressure drop.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The outlet header delivers superheated steam to the turbine or process.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It plays a vital role in efficient and safe boiler operation.</span></li>
+                    </ul>
+                `
+            },
+            'screw-feeder': {
+                title: 'Industrial Screw Feeder',
+                image: 'assets/images/screw-feeder-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A screw feeder is a mechanical device used to convey bulk materials.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It consists of a rotating helical screw (auger) inside a tube or trough.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The screw rotates with the help of a motor and gearbox.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Material is fed from a hopper into the screw feeder.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>As the screw rotates, material moves forward along the trough.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is used to control and regulate the flow rate of materials.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Screw feeders are commonly used in coal, cement, and ash handling systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They are suitable for powders, granules, and semi-solid materials.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The system is compact, simple, and easy to maintain.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It ensures continuous and controlled material feeding in industrial plants.</span></li>
+                    </ul>
+                `
+            },
+            'baffle-plates': {
+                title: 'Deaerator Baffle Plates',
+                image: 'assets/images/deaerator-baffle-plates.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Deaerator baffle plates are internal components installed inside a deaerator tank.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They help control the flow and distribution of feed water.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Baffles increase the contact time between water and steam.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>This improves the removal of dissolved gases like oxygen and carbon dioxide.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The plates also reduce turbulence inside the tank.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They guide water through a specific path for effective deaeration.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Baffles prevent direct short-circuit flow from inlet to outlet.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>They enhance heating and mixing efficiency within the deaerator.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Proper design of baffle plates ensures uniform temperature distribution.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Efficient baffles improve boiler safety, efficiency, and equipment life.</span></li>
+                    </ul>
+                `
+            },
+            'autoclave-cement': {
+                title: 'Autoclave for Cement Industry',
+                image: 'assets/images/autoclave-cement-industry.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>An autoclave in the cement industry is a high-pressure steam curing vessel.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It is mainly used for curing AAC (Autoclaved Aerated Concrete) blocks.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>The autoclave is a long cylindrical pressure vessel made of thick steel.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Blocks are loaded on trolleys and moved inside the vessel.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>High-pressure saturated steam is supplied into the autoclave.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Steam curing accelerates the chemical reaction of cement and lime.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>This process increases strength and durability of the products.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>It also reduces curing time compared to normal water curing.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Safety systems like pressure valves and locking doors are provided.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Autoclaves are essential for producing high-quality lightweight building materials.</span></li>
+                    </ul>
+                `
+            },
+            'storage-tank': {
+                title: 'Industrial Storage Tank',
+                image: 'assets/images/storage-tank-main.png',
+                description: `
+                    <ul class="space-y-3 text-gray-700 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>A storage tank is a container used to store fluids or gases in industrial systems.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Used for storing water, fuel, chemicals, and other industrial liquids.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Fabricated from high-quality steel for strength and durability.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Designed to withstand internal pressure and temperature variations.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Available in horizontal and vertical configurations.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Equipped with inlet, outlet, and vent connections as required.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Safety fittings like pressure relief valves and level gauges are provided.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Surface treatment and coating prevent corrosion and extend tank life.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Complies with industrial standards for safe storage and handling.</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Widely used in power plants, chemical industries, and water treatment plants.</span></li>
+                    </ul>
+                `
+            },
+            'spares': {
+                title: 'Boiler Spares and Services',
+                image: 'assets/images/boiler.png',
+                description: `
+                    <div class="space-y-6">
+                        <p class="text-gray-700 leading-relaxed">
+                            We are manufacturer, supplier, and service provider of boiler spares and services. 
+                            Our company offers a diverse range of boiler pressure parts for various boiler types, 
+                            utility services for water treatment plants, and specialized water treatment chemicals.
+                        </p>
+                        <ul class="space-y-3 text-gray-700 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Comprehensive manufacturing and supply of high-grade boiler spares.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Expert service provider for all industrial boiler types.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Wide range of pressure parts including coils, headers, and tubes.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Specialized utility services for modern water treatment plants.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>High-performance water treatment chemicals for system efficiency.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Reliable distribution network for quick spare part availability.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Adheres to strict industrial quality and safety standards.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Customized spare solutions based on specific boiler designs.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Extends the operational life and efficiency of industrial boilers.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-industrial-orange mt-1 mr-3"></i> <span>Dedicated support for maintenance and emergency spare requirements.</span></li>
+                        </ul>
+                    </div>
+                `
+            }
+        };
+
+        function openModal(id) {
+            const data = productsData[id];
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <div class="flex flex-col md:flex-row gap-10 items-start">
+                    <div class="w-full md:w-1/2">
+                        <img src="${data.image}" class="w-full h-auto shadow-2xl rounded-sm border-4 border-gray-50" alt="${data.title}">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-3xl font-black uppercase text-industrial-black mb-4">${data.title}</h2>
+                        <div class="w-20 h-1.5 bg-industrial-orange mb-8"></div>
+                        <div class="prose prose-sm max-w-none text-gray-700">
+                            ${data.description}
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('modal-container').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+
+</html>

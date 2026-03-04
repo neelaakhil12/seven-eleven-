@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients | Seven Eleven Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            orange: '#FF8C00',
+                            black: '#0B0B0B',
+                            dark: '#1F1F1F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-industrial-black pt-20">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white shadow-md py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-16 w-auto">
+                <div class="hidden lg:flex flex-col leading-none">
+                    <span class="text-xl font-black text-industrial-black tracking-tighter">SEVEN ELEVEN</span>
+                    <span
+                        class="text-sm font-bold text-industrial-orange tracking-[0.2em] uppercase">Technologies</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Home</a>
+                <a href="services.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Services</a>
+                <a href="products.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Our
+                    Products</a>
+                <a href="clients.html"
+                    class="text-industrial-orange px-3 py-2 text-sm font-bold uppercase border-b-2 border-industrial-orange">Our
+                    Clients</a>
+                <a href="about.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">About
+                    Us</a>
+                <a href="contact.html"
+                    class="bg-industrial-orange text-white px-5 py-2 rounded-sm text-sm font-bold uppercase hover:bg-industrial-black hover:text-white transition-all">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-industrial-black py-20 text-center">
+        <h1 class="text-5xl font-black text-white uppercase" data-aos="fade-down">Our <span
+                class="text-industrial-orange">Clients</span></h1>
+        <p class="text-gray-400 mt-4 uppercase tracking-widest font-bold" data-aos="fade-up">Trusted by Industry Leaders
+        </p>
+    </header>
+
+    <!-- Clients Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8" id="clients-list">
+                <!-- Client logos will be simulated with placeholders since no real logos are provided -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-industrial-black py-20 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="inline-block">
+                        <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-20 w-auto">
+                    </a>
+                    <p class="mt-6 text-gray-600 max-w-md">
+                        Forward-looking engineering company dedicated to manufacturing high-quality industrial
+                        components and systems. Backed by experienced engineers and techniques.
+                    </p>
+                    <div class="mt-8 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase mb-8 border-b-2 border-industrial-orange inline-block pb-2">
+                        Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Home</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Services</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Our
+                                Products</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase mb-8 border-b-2 border-industrial-orange inline-block pb-2">
+                        Contact Info</h4>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span>Sy. No: 134, Plot No: 961, 962, 1007 & 1008,<br>
+                                Dulapally Village, IDA Jeedimetla,<br>
+                                Medchal - Malkajgiri, Hyderabad - 500055</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-industrial-orange"></i>
+                            <span>+91 9885292147</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-industrial-orange"></i>
+                            <span>admin@seveneleventechnologies.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-gray-100 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 Seven Eleven Technologies. All rights reserved. Developed by <a
+                        href="https://www.codtechitsolutions.com/" target="_blank"
+                        class="hover:text-industrial-orange transition-colors">Codtech IT Solution</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 1)';
+            } else {
+                navbar.classList.remove('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+            }
+        });
+
+        const clients = [
+            { name: "VIRCHOWS PETRO CHEMICAL", image: "assets/images/client-virchows.png" },
+            { name: "HARTEX RUBBER", image: "assets/images/client-hartex.png" },
+            { name: "WELPSUN LIVING", image: "assets/images/client-welpsun-v2.png" },
+            { name: "KREBS BIO CHEMICALS", image: "assets/images/client-krebs.png" },
+            { name: "CREDO LIFE SCIENCE", image: "assets/images/client-credo.png" },
+            { name: "SANZYME BIOLOGICS", image: "assets/images/client-sanzyme.png" },
+            { name: "PROMEA", image: "assets/images/client-promea.png" },
+            { name: "SHRIKRISHNA PHARMACEUTICALS", image: "assets/images/client-shrikrishna.png" },
+            { name: "AURORE LIFE SCIENCES", image: "assets/images/client-aurore.png" },
+            { name: "ARIES AGRO LIMITED", image: "assets/images/client-aries.png" },
+            { name: "EMNAR PHARMA", image: "assets/images/client-emnar.png" },
+            { name: "BIRLANU LIMITED", image: "assets/images/client-birlanu.png" },
+            { name: "PVS CHEMICALS", image: "assets/images/client-pvs.png" },
+            { name: "KCP LIMITED", image: "assets/images/client-kcp.png" }
+        ];
+
+        const container = document.getElementById('clients-list');
+        clients.forEach((client, index) => {
+            const div = document.createElement('div');
+            div.className = "bg-white p-6 flex flex-col items-center justify-center border border-gray-100 text-center h-48";
+            div.setAttribute('data-aos', 'fade-up');
+            div.setAttribute('data-aos-delay', (index % 5) * 50);
+
+            const imageHtml = client.image ?
+                `<img src="${client.image}" alt="${client.name}" class="max-h-24 w-auto object-contain">` :
+                `<div class="w-16 h-16 bg-industrial-orange flex items-center justify-center rounded-full text-white text-2xl font-black">${client.name.charAt(0)}</div>`;
+
+            div.innerHTML = `
+                <div class="h-24 flex items-center justify-center mb-6 w-full">
+                    ${imageHtml}
+                </div>
+                <h3 class="text-[11px] font-black uppercase text-gray-800 tracking-tight leading-tight px-2">${client.name}</h3>
+            `;
+            container.appendChild(div);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Seven Eleven Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            orange: '#FF8C00',
+                            black: '#0B0B0B',
+                            dark: '#1F1F1F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-industrial-black pt-20">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white py-4 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-16 w-auto">
+                <div class="hidden lg:flex flex-col leading-none">
+                    <span class="text-xl font-black text-industrial-black tracking-tighter">SEVEN ELEVEN</span>
+                    <span
+                        class="text-sm font-bold text-industrial-orange tracking-[0.2em] uppercase">Technologies</span>
+                </div>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Home</a>
+                <a href="services.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Services</a>
+                <a href="products.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Our
+                    Products</a>
+                <a href="clients.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Our
+                    Clients</a>
+                <a href="about.html"
+                    class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-industrial-orange px-3 py-2 text-sm font-bold uppercase border-b-2 border-industrial-orange">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-industrial-black py-20 text-center">
+        <h1 class="text-5xl font-black text-white uppercase" data-aos="fade-down">Contact <span
+                class="text-industrial-orange">Us</span></h1>
+        <p class="text-gray-400 mt-4 uppercase tracking-widest font-bold" data-aos="fade-up">Let's Discuss Your
+            Engineering Needs</p>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-black uppercase mb-8">Get In <span
+                            class="text-industrial-orange">Touch</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-gray-100 flex items-center justify-center text-industrial-orange text-xl mr-6">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold uppercase text-gray-400">Call Us</p>
+                                <a href="tel:9885292147"
+                                    class="text-xl font-black hover:text-industrial-orange transition-colors">91
+                                    9885292147</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-gray-100 flex items-center justify-center text-industrial-orange text-xl mr-6">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold uppercase text-gray-400">Email Us</p>
+                                <a href="mailto:admin@seveneleventechnologies.com"
+                                    class="text-lg font-black hover:text-industrial-orange transition-colors">admin@seveneleventechnologies.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-gray-100 flex items-center justify-center text-industrial-orange text-xl mr-6">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold uppercase text-gray-400">Our Location</p>
+                                <p class="text-lg font-bold leading-tight">Sy. No: 134, Plot No: 961, 962, 1007 &
+                                    1008,<br>
+                                    Dulapally Village, IDA Jeedimetla,<br>
+                                    Medchal - Malkajgiri, Hyderabad - 500055</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Buttons -->
+                    <div class="mt-12 flex gap-4">
+                        <a href="tel:9885292147"
+                            class="flex-1 bg-industrial-orange text-white text-center py-4 font-black uppercase tracking-widest hover:bg-industrial-black transition-all">
+                            Call Now <i class="fas fa-phone ml-2"></i>
+                        </a>
+                        <a href="mailto:admin@seveneleventechnologies.com"
+                            class="flex-1 border-2 border-industrial-black text-industrial-black text-center py-4 font-black uppercase tracking-widest hover:bg-industrial-black hover:text-white transition-all">
+                            Email Us <i class="fas fa-paper-plane ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-10 border-l-8 border-industrial-orange" data-aos="fade-left">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Your Name"
+                                class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm">
+                            <input type="email" placeholder="Email Address"
+                                class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm">
+                        </div>
+                        <input type="tel" placeholder="Phone Number"
+                            class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm">
+                        <textarea placeholder="Your Message" rows="5"
+                            class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm"></textarea>
+                        <button type="submit"
+                            class="w-full bg-industrial-black text-white py-5 font-black uppercase tracking-widest hover:bg-industrial-orange transition-all">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Embed -->
+    <section class="h-96 w-full">
+        <iframe class="w-full h-full grayscale opacity-80"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1583321455584!2d78.441!3d17.519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMxJzA4LjQiTiA3OMKwMjYnMjcuNiJF!5e0!3m2!1sen!2sin!4v1646292147421!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-industrial-black py-20 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="inline-block">
+                        <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-20 w-auto">
+                    </a>
+                    <p class="mt-6 text-gray-600 max-w-md">
+                        Forward-looking engineering company dedicated to manufacturing high-quality industrial
+                        components and systems. Backed by experienced engineers and techniques.
+                    </p>
+                    <div class="mt-8 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-industrial-orange text-xl transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase mb-8 border-b-2 border-industrial-orange inline-block pb-2">
+                        Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Home</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Services</a></li>
+                        <li><a href="products.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">Our
+                                Products</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-600 hover:text-industrial-orange transition-colors">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold uppercase mb-8 border-b-2 border-industrial-orange inline-block pb-2">
+                        Contact Info</h4>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span>Sy. No: 134, Plot No: 961, 962, 1007 & 1008,<br>
+                                Dulapally Village, IDA Jeedimetla,<br>
+                                Medchal - Malkajgiri, Hyderabad - 500055</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-industrial-orange"></i>
+                            <span>+91 9885292147</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-industrial-orange"></i>
+                            <span>admin@seveneleventechnologies.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-gray-100 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 Seven Eleven Technologies. All rights reserved. Developed by <a
+                        href="https://www.codtechitsolutions.com/" target="_blank"
+                        class="hover:text-industrial-orange transition-colors">Codtech IT Solution</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 1)';
+            } else {
+                navbar.classList.remove('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+            }
+        });
+    </script>
+</body>
+
+</html>

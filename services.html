@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Seven Eleven Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            orange: '#FF8C00',
+                            black: '#0B0B0B',
+                            dark: '#1F1F1F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-industrial-black overflow-x-hidden pt-20">
+
+    <!-- Sticky Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav py-4" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-12">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-4">
+                        <img src="assets/images/logo.png" alt="Seven Eleven Technologies Logo" class="h-16 w-auto">
+                        <div class="hidden lg:flex flex-col leading-none">
+                            <span class="text-xl font-black text-industrial-black tracking-tighter">SEVEN ELEVEN</span>
+                            <span
+                                class="text-sm font-bold text-industrial-orange tracking-[0.2em] uppercase">Technologies</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Home</a>
+                        <a href="services.html"
+                            class="text-industrial-orange px-3 py-2 text-sm font-bold uppercase border-b-2 border-industrial-orange">Services</a>
+                        <a href="products.html"
+                            class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Our
+                            Products</a>
+                        <a href="clients.html"
+                            class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">Our
+                            Clients</a>
+                        <a href="about.html"
+                            class="text-industrial-black hover:text-industrial-orange px-3 py-2 text-sm font-medium uppercase transition-colors border-b-2 border-transparent hover:border-industrial-orange">About
+                            Us</a>
+                        <a href="contact.html"
+                            class="bg-industrial-orange text-white px-5 py-2 rounded-sm text-sm font-bold uppercase hover:bg-industrial-black hover:text-white transition-all">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-industrial-black py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 L100 0 L100 100 Z" fill="#FF8C00"></path>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-5xl font-black text-white uppercase tracking-tighter mb-4" data-aos="fade-down">Expertise &
+                <span class="text-industrial-orange">Services</span>
+            </h1>
+            <p class="text-gray-400 uppercase tracking-widest text-sm font-bold" data-aos="fade-up">Industrial
+                Engineering | Fabrication | Installation</p>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- EPC Projects -->
+                <div class="group bg-gray-50 border border-gray-100 p-8 card-hover relative flex flex-col h-full"
+                    data-aos="fade-up">
+                    <div
+                        class="text-5xl text-industrial-orange mb-8 transition-transform duration-500 group-hover:scale-110">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">EPC Projects</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">
+                        We provide complete Engineering, Procurement, and Construction solutions for industrial plants
+                        ensuring quality, safety, and timely project completion.
+                    </p>
+                    <button onclick="openModal('epc-projects')"
+                        class="w-full py-4 border-2 border-industrial-orange text-industrial-orange font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- Boiler Erections -->
+                <div class="group bg-gray-50 border border-gray-100 p-8 card-hover relative flex flex-col h-full"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="text-5xl text-industrial-orange mb-8 transition-transform duration-500 group-hover:scale-110">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Boiler Erections</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">
+                        Professional steam boiler installation, alignment, commissioning, and testing with strict
+                        adherence to safety and industry standards.
+                    </p>
+                    <button onclick="openModal('boiler-erections')"
+                        class="w-full py-4 border-2 border-industrial-orange text-industrial-orange font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- Boiler Spares -->
+                <div class="group bg-gray-50 border border-gray-100 p-8 card-hover relative flex flex-col h-full"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="text-5xl text-industrial-orange mb-8 transition-transform duration-500 group-hover:scale-110">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Boiler Spares</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">
+                        Supply of high-quality boiler spare parts, accessories, and consumables for smooth and
+                        uninterrupted operations.
+                    </p>
+                    <button onclick="openModal('boiler-spares')"
+                        class="w-full py-4 border-2 border-industrial-orange text-industrial-orange font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- Chimney Erection -->
+                <div class="group bg-gray-50 border border-gray-100 p-8 card-hover relative flex flex-col h-full"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="text-5xl text-industrial-orange mb-8 transition-transform duration-500 group-hover:scale-110">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Chimney Erection</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">
+                        Design and installation of industrial chimneys with structural stability and compliance to
+                        emission standards. High durability and performance.
+                    </p>
+                    <button onclick="openModal('chimney-erection')"
+                        class="w-full py-4 border-2 border-industrial-orange text-industrial-orange font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- Pipe Line Erections -->
+                <div class="group bg-gray-50 border border-gray-100 p-8 card-hover relative flex flex-col h-full"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="text-5xl text-industrial-orange mb-8 transition-transform duration-500 group-hover:scale-110">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Pipe Lines</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">
+                        Expert pipeline fabrication and erection for steam, water, oil, and gas systems with leak-proof
+                        performance and ASME standards.
+                    </p>
+                    <button onclick="openModal('pipeline-erections')"
+                        class="w-full py-4 border-2 border-industrial-orange text-industrial-orange font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+                <!-- Industrial Structure -->
+                <div class="group bg-gray-50 border border-gray-100 p-8 card-hover relative flex flex-col h-full"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div
+                        class="text-5xl text-industrial-orange mb-8 transition-transform duration-500 group-hover:scale-110">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Industrial Structure</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">
+                        Fabrication and erection of durable industrial sheds and warehouse structures tailored to
+                        operational needs and heavy-duty environments.
+                    </p>
+                    <button onclick="openModal('industrial-structure')"
+                        class="w-full py-4 border-2 border-industrial-orange text-industrial-orange font-black uppercase tracking-widest hover:bg-industrial-orange hover:text-white transition-all">
+                        View More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-container"
+        class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black bg-opacity-90">
+        <div class="bg-white w-full max-w-2xl p-10 relative">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-3xl font-bold text-gray-400 hover:text-industrial-orange transition-colors">
+                &times;
+            </button>
+            <div id="modal-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white text-industrial-black py-20 border-t border-gray-100">
+        <!-- Reusing index.html footer content -->
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 text-left mb-12">
+            <div>
+                <h4 class="text-lg font-bold uppercase mb-6 border-b-2 border-industrial-orange inline-block pb-1">
+                    Contact Us</h4>
+                <ul class="space-y-4 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1.5 mr-3 text-industrial-orange"></i>
+                        <span>Sy. No: 134, Plot No: 961, 962, 1007 & 1008,<br>
+                            Dulapally Village, IDA Jeedimetla,<br>
+                            Medchal - Malkajgiri, Hyderabad - 500055</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-3 text-industrial-orange"></i>
+                        <span>+91 9885292147</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-industrial-orange"></i>
+                        <span>admin@seveneleventechnologies.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold uppercase mb-6 border-b-2 border-industrial-orange inline-block pb-1">Quick
+                    Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-500 hover:text-industrial-orange">Home</a></li>
+                    <li><a href="products.html" class="text-gray-500 hover:text-industrial-orange">Products</a></li>
+                    <li><a href="clients.html" class="text-gray-500 hover:text-industrial-orange">Clients</a></li>
+                </ul>
+            </div>
+            <div class="md:text-right">
+                <img src="assets/images/logo.png" alt="Logo" class="h-16 w-auto inline-block mb-4">
+                <p class="text-xs text-gray-400">&copy; 2026 Seven Eleven Technologies.<br>All rights reserved.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center border-t border-gray-100 pt-8">
+            <p class="text-sm">Developed by <a href="https://www.codtechitsolutions.com/" target="_blank"
+                    class="hover:text-industrial-orange transition-colors">Codtech IT Solution</a>.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 1)';
+            } else {
+                navbar.classList.remove('py-4');
+                navbar.style.background = 'rgba(255, 255, 255, 0.9)';
+            }
+        });
+
+        const servicesData = {
+            'epc-projects': {
+                title: 'EPC Projects',
+                content: 'Our Engineering, Procurement, and Construction (EPC) services cover the entire lifecycle of industrial projects. From initial design and material sourcing to construction and final commissioning, we ensure that every phase is handled by experts. We specialize in turn-key solutions for industrial plants, focusing on maximizing efficiency and minimizing downtime.'
+            },
+            'boiler-erections': {
+                title: 'Boiler Erections',
+                content: 'We are experts in the installation and commissioning of high-pressure steam boilers. Our team follows rigid safety protocols (IBR & non-IBR) to ensure that your boiler system is aligned perfectly and operates at peak performance. We handle everything from site preparation to final performance testing.'
+            },
+            'boiler-spares': {
+                title: 'Boiler Spares and Consumables',
+                content: 'We provide a comprehensive range of high-quality spare parts and consumables for all types of industrial boilers. Our inventory includes coils, grates, burners, valves, and gaskets, sourced for durability and high-temperature performance. Maintain your operations without interruptions with our genuine spares.'
+            },
+            'chimney-erection': {
+                title: 'Chimney Erection',
+                content: 'Specialists in the design, fabrication, and erection of industrial chimneys and stacks. Our designs comply with pollution control board regulations and are engineered for structural stability against wind loads and seismic activity. We use high-grade materials for anti-corrosion and longevity.'
+            },
+            'pipeline-erections': {
+                title: 'Pipe Line Erections',
+                content: 'Highly skilled in the fabrication and erection of industrial piping systems for steam, water, LPG, and process chemicals. We use specialized welding techniques (TIG/ARC) and conduct non-destructive testing (NDT) to ensure zero leaks and high safety standards in pressurized systems.'
+            },
+            'industrial-structure': {
+                title: 'Industrial & Warehouse Structure',
+                content: 'We specialize in the construction of large-scale industrial warehouses and PEB (Pre-Engineered Building) structures. Our designs focus on wide-span durability, crane support systems, and optimal ventilation, ensuring a safe and productive environment for your industrial operations.'
+            }
+        };
+
+        function openModal(id) {
+            const data = servicesData[id];
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <h2 class="text-3xl font-black uppercase text-industrial-black mb-6">${data.title}</h2>
+                <div class="w-20 h-2 bg-industrial-orange mb-8"></div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-8">${data.content}</p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-gray-50 p-4 border-l-4 border-industrial-orange">
+                        <p class="font-bold text-sm uppercase">Quality</p>
+                        <p class="text-xs text-gray-500">Industry Standards</p>
+                    </div>
+                <div class="bg-gray-50 p-4 border-l-4 border-industrial-orange">
+                        <p class="font-bold text-sm uppercase">Safety</p>
+                        <p class="text-xs text-gray-500">Zero Accident Goal</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="inline-block bg-industrial-black text-white px-8 py-3 font-bold uppercase hover:bg-industrial-orange transition-all">Get Quote</a>
+            `;
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('modal-container').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+
+</html>
