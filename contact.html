@@ -162,16 +162,16 @@
 
                 <!-- Contact Form -->
                 <div class="bg-gray-50 p-10 border-l-8 border-industrial-orange" data-aos="fade-left">
-                    <form class="space-y-6">
+                    <form id="contact-form" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <input type="text" placeholder="Your Name"
+                            <input type="text" id="name" placeholder="Your Name" required
                                 class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm">
-                            <input type="email" placeholder="Email Address"
+                            <input type="email" id="email" placeholder="Email Address" required
                                 class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm">
                         </div>
-                        <input type="tel" placeholder="Phone Number"
+                        <input type="tel" id="phone" placeholder="Phone Number" required
                             class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm">
-                        <textarea placeholder="Your Message" rows="5"
+                        <textarea id="message" placeholder="Your Message" rows="5" required
                             class="w-full bg-white border border-gray-200 p-4 focus:outline-none focus:border-industrial-orange font-bold uppercase text-sm"></textarea>
                         <button type="submit"
                             class="w-full bg-industrial-black text-white py-5 font-black uppercase tracking-widest hover:bg-industrial-orange transition-all">Send
@@ -317,6 +317,22 @@
 
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // WhatsApp Form Handling
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage = `New Inquiry from Website:%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
+
+            const whatsappUrl = `https://wa.me/919885292147?text=${whatsappMessage}`;
+
+            window.open(whatsappUrl, '_blank');
         });
     </script>
 
