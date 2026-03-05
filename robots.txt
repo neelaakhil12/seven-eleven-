@@ -1,0 +1,11 @@
+# Robots.txt for seveneleventechnologies.com
+# Generated: 2026-03-05
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (if any in future)
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://seveneleventechnologies.com/sitemap.xml

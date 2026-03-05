@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page (Highest Priority) -->
+    <url>
+        <loc>https://seveneleventechnologies.com/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Products Page -->
+    <url>
+        <loc>https://seveneleventechnologies.com/products.html</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Services Page -->
+    <url>
+        <loc>https://seveneleventechnologies.com/services.html</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- About Us Page -->
+    <url>
+        <loc>https://seveneleventechnologies.com/about.html</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Our Clients Page -->
+    <url>
+        <loc>https://seveneleventechnologies.com/clients.html</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact Us Page -->
+    <url>
+        <loc>https://seveneleventechnologies.com/contact.html</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
